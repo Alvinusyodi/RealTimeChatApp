@@ -1,0 +1,248 @@
+@import url("https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;500;700&display=swap");
+
+/* Reset default browser styles */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Roboto", sans-serif;
+}
+
+/* Set default font and background color */
+body {
+  background-color: #00000013;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+}
+
+/* Container for login and register forms */
+#login-container {
+  background: #fff;
+  padding: 2rem;
+  max-width: 400px;
+  width: 100%;
+  border-radius: 8px;
+  border-top: 2px solid #0664c9;
+}
+
+/* Form headings */
+#login-container h2 {
+  margin-bottom: 1rem;
+  color: #333;
+}
+
+#register-link {
+  color: #555;
+  font-size: 14px;
+  text-decoration: none;
+  text-align: center;
+}
+
+/* Form styles */
+form {
+  display: flex;
+  flex-direction: column;
+}
+
+form input {
+  padding: 0.75rem;
+  margin-bottom: 1rem;
+  border: 1px solid #ddd;
+  border-radius: 4px;
+  outline: none;
+}
+
+form input:focus {
+  border-color: #007bff;
+}
+
+form button {
+  padding: 0.75rem;
+  background-color: #007bff;
+  color: #fff;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+form button:hover {
+  background-color: #0056b3;
+}
+
+/* Chat container */
+#chat-container {
+  display: flex;
+  flex-direction: column;
+  background: #fff;
+  border-radius: 8px;
+  max-width: 500px;
+  height: 600px;
+  width: 100%;
+  border-bottom: 2px solid #0056b3;
+}
+
+.header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 15px 20px;
+  background-color: #fff;
+  border-radius: 8px 8px 0px 0px;
+  border-bottom: 1px solid rgba(0, 0, 0, 0.1);
+}
+
+.header .logo {
+  display: flex;
+  align-items: center;
+  color: #fff;
+  gap: 10px;
+}
+
+.header .logo .icons {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 32px;
+  height: 32px;
+  line-height: 32px;
+  border: 1px solid #0664c9;
+  border-radius: 50%;
+}
+
+.header .logo .icons img {
+  width: 100%;
+  object-fit: cover;
+}
+
+.username-text {
+  color: #333;
+  font-size: 15px;
+  font-weight: 400;
+}
+
+.username-text p {
+  font-size: 10px;
+  color: #666;
+  margin-top: 2px;
+}
+
+.logout {
+  padding: 5px 10px;
+  cursor: pointer;
+  color: red;
+  background-color: rgba(187, 28, 28, 0.103);
+  border-radius: 5px;
+  font-size: 13px;
+  font-weight: 400;
+  transition: 0.2s;
+}
+
+.logout:hover {
+  outline: 1px solid rgb(97, 2, 2);
+}
+
+#messages {
+  flex: 1;
+  height: 500px;
+  padding: 20px;
+  overflow-y: auto;
+  display: flex;
+  flex-direction: column;
+}
+
+/* Style untuk pesan */
+.message {
+  max-width: 70%;
+  margin-bottom: 8px;
+  padding: 10px;
+  border-radius: 8px;
+  display: flex;
+  flex-direction: column;
+  font-size: 16px;
+  font-weight: 400;
+}
+
+.sent-message {
+  align-self: flex-end;
+  background-color: #DCF8C6;
+  border-bottom-right-radius: 0px;
+  text-align: right;
+}
+
+.sent-message .username{
+  text-align: right;
+}
+
+.received-message {
+  align-self: flex-start;
+  background-color: #EAEAEA;
+  border-bottom-left-radius: 0px;
+  margin-bottom: 8px;
+  text-align: left;
+}
+
+.received-message .username{
+  text-align: left;
+}
+
+.username {
+  font-size: 12px;
+  font-weight: 400;
+  color: #333;
+  margin-bottom: 2px;
+}
+
+.message-text {
+  margin-top: 5px;
+}
+
+.join-message {
+  background-color: rgba(0, 128, 0, 0.192);
+  color: green;
+  font-size: 14px;
+  font-weight: 400;
+  padding: 15px;
+  border-radius: 8px;
+  -webkit-border-radius: 8px;
+  -moz-border-radius: 8px;
+  -ms-border-radius: 8px;
+  -o-border-radius: 8px;
+  text-align: center;
+  margin: 8px 0px;
+}
+
+
+/* Send box */
+.send-box {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 10px 20px;
+  gap: 10px;
+  border-top: 1px solid rgba(0, 0, 0, 0.1);
+}
+
+#message-input {
+  flex: 1;
+  border: none;
+  outline: none;
+  padding: 5px 0;
+  font-size: 14px;
+  font-weight: 500;
+  color: #444;
+}
+
+#send-button {
+  background: none;
+  border: none;
+  cursor: pointer;
+  outline: none;
+}
+
+#send-button img {
+  width: 18px;
+  height: 20px;
+}

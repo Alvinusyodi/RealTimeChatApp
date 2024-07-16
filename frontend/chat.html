@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="css/styles.css">
+  <title>Project UAS Pemrograman Jaringan</title>
+</head>
+
+<body>
+  <div id="chat-container">
+    <div class="header">
+      <div class="logo">
+        <div class="icons">
+          <img src="assets/user.png" alt="">
+        </div>
+        <div class="username-text">
+          <span>Alvinus</span>
+          <p>10:00 AM</p>
+        </div>
+      </div>
+      <div class="logout" id="logout-link">
+        Keluar
+      </div>
+    </div>
+    <div id="messages"></div>
+    <div class="send-box">
+      <input type="text" id="message-input" placeholder="Type a message...">
+      <button id="send-button">
+        <img src="assets/send.png" alt="">
+      </button>
+    </div>
+  </div>
+
+  <script src="/socket.io/socket.io.js"></script>
+  <script src="js/chat.js"></script>
+</body>
+
+</html>
